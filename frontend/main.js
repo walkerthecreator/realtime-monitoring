@@ -5,8 +5,14 @@ const form = document.querySelector("form") ;
 const status = document.querySelector('#status') ;
 const monitor = document.querySelector('.monitor')
 const ul = document.querySelector("#messages")
+const pingBtn = document.querySelector('#btn')
+const select = document.querySelector("select")
 
 const socket = io("http://localhost:3000") ;
+
+const arr = ["one" , "two" , "three" , "four"]
+
+
 
 
 socket.on("connect" , function (client){
